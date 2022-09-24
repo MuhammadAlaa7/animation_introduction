@@ -27,7 +27,9 @@ class _MyTweenState extends State<MyTween> {
             TweenAnimationBuilder<double>(
               // must configure the type of the value in generic
                           // tween is the begin and the end of the values >>> range
+              // tween is an abbreviation for between
                 tween: Tween(begin: 0, end: angle),
+
                 duration: const Duration(seconds: 3),
                 builder: (_, angle, child) =>  Transform.rotate(
                   angle: angle * (pi / 180),
